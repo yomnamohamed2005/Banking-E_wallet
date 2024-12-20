@@ -13,6 +13,9 @@ namespace Banking_E_Wallet
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<datacontext>();
+            builder.Services.AddIdentity<user, IdentityRole>()
+               .AddEntityFrameworkStores<datacontext>()
+               .AddDefaultTokenProviders();
             var app = builder.Build();
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

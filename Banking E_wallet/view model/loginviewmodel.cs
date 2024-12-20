@@ -6,8 +6,8 @@ namespace Banking_E_Wallet.view_model
     {
         [Required]
     
-        [EmailAddress(ErrorMessage = "invalid email")]
-        public string email { get; set; }
+      //  [EmailAddress(ErrorMessage = "invalid email")]
+        public string name { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

@@ -56,7 +56,8 @@ namespace Banking_E_Wallet.Controllers
         public IActionResult login(loginviewmodel model)
         {
             if (!ModelState.IsValid) return View(model);
-            var user = _user.FindByEmailAsync(model.email).Result;
+           // var user = _user.FindByEmailAsync(model.email).Result;
+            var user = _user.FindByNameAsync(model.name).Result;
             if (user is not null)
             {
                 if (_user.CheckPasswordAsync(user, model.password).Result)

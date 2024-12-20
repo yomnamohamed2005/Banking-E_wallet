@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Update;
 using Microsoft.Identity.Client;
 using static Banking_E_Wallet.Controllers.accountcontroller;
 
-namespace Banking_E_Wallet.Controllers
+namespace Banking_E_Wallet.Controllers 
 {
     public class accountcontroller : Controller
     {
